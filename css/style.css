@@ -1,0 +1,33 @@
+/* font-family: 'Montserrat', sans-serif; */
+
+/* :root{
+
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+    padding: 0 2%;
+}
+
+main{
+    border: 1px solid red;
+    height: 100vh;
+}
+
+.aux-menu-item{
+    color: rgba(0,0,0,.4);
+    font-family: montserrat,Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 19px;
+    letter-spacing: -.48px;
+}
