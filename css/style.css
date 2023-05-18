@@ -1,33 +1,263 @@
 /* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
 
-/* :root{
-
-} */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
+:root {
+  --medium-grey: rgb(68, 68, 68);
+  --grey-border-color: #e1e1e1;
+  --black-shadow: rgb(0 0 0/6%);
+  --global-color-text: #000;
+  --color-text-white: #f1f1f1;
+  --primary-orange: #ec7322;
+  --pinkish-red: #f42c37;
 }
 
-body{
-    overflow-x: hidden;
-    padding: 0 2%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
-main{
-    border: 1px solid red;
-    height: 100vh;
+body {
+  overflow-x: hidden;
+  padding: 0 2%;
 }
 
-.aux-menu-item{
-    color: rgba(0,0,0,.4);
-    font-family: montserrat,Sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: capitalize;
-    line-height: 19px;
-    letter-spacing: -.48px;
+/* Start: Header */
+
+.aux-menu-item {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: montserrat, Sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 19px;
+  letter-spacing: -0.48px;
 }
+
+.current-menu-item {
+  color: #000 !important;
+}
+
+.padding-one {
+  padding: 1%;
+}
+
+.header-inner {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 10.662%;
+}
+
+nav {
+  width: 67.86%;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid blue; */
+}
+
+nav a {
+  display: block;
+  padding: 5px 10px;
+}
+
+.header-login {
+  width: 14.396%;
+  padding: 0 2%;
+}
+
+.header-login a {
+  float: right;
+  color: var(--medium-grey);
+}
+
+.header-search {
+  width: 3.351%;
+  cursor: pointer;
+}
+
+.header-search svg {
+  width: 22px;
+  fill: var(--medium-grey);
+}
+
+.header-cart {
+  width: 3.743%;
+}
+
+.header-cart svg {
+  fill: var(--medium-grey);
+}
+
+.header-cart-menu svg {
+  fill: rgba(68, 68, 68, 0.2);
+}
+
+.cart-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-dropdown:hover .header-cart-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-cart-menu {
+  position: absolute;
+  top: 28px;
+  right: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  padding: 10px 0;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--grey-border-color);
+  box-shadow: 0 40px 40px var(--black-shadow);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25ms;
+  z-index: 7;
+}
+
+.header-cart-menu span {
+  display: inline-block;
+  color: rgba(68, 68, 68, 0.3);
+  text-align: center;
+}
+
+/* End: Header */
+
+/* Start: Main */
+
+main {
+  min-height: 100vh;
+}
+
+/* Start: Main Hero Image */
+
+.main-hero-image {
+  width: 100%;
+  /* min-height: 100vh; */
+  padding: 16% 0 7% 9%;
+  border-radius: 25px;
+  background-image: linear-gradient(105deg, #dcdcdc 54%, #eee 68%);
+  overflow: hidden;
+}
+
+.mhi-content {
+  position: relative;
+}
+
+.mhi-heading-primary {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  line-height: 43px;
+  letter-spacing: -1.3px;
+  color: var(--global-color-text);
+  margin: 0 0 -11px;
+}
+
+.mhi-heading-secondary {
+  font-family: "Poppins", Sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 120px;
+  letter-spacing: -2px;
+  color: var(--e-global-color-text);
+  margin: 0;
+}
+
+.mhi-heading-description p {
+  color: #f8f8f8;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 12vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 150px;
+  letter-spacing: -2.9px;
+  margin: 0 0 0 -11px;
+}
+
+.mhi-images {
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+  top: -70%;
+  right: 72px;
+  height: auto;
+}
+
+.mhi-image-parent {
+  position: relative;
+  width: 100%;
+}
+
+.mhi-images img {
+  width: 100%;
+}
+
+.mhi-button {
+  position: relative;
+  z-index: 6;
+  cursor: pointer;
+}
+
+.mhi-button a {
+  position: absolute;
+  margin-top: 2em;
+  color: var(--color-text-white);
+  background-color: var(--pinkish-red);
+  padding: 16px 35px;
+  border-radius: 40px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+  transition: 0.3s ease-in-out;
+}
+
+.mhi-button a:hover {
+  color: var(--color-text-white);
+  background-color: #000;
+}
+
+.mhi-details {
+  margin-top: 2em;
+  width: 25em;
+  text-align: right;
+  float: right;
+}
+
+.mhi-details h2 {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19px;
+  color: var(--global-color-text);
+  max-width: 284px;
+}
+
+.mhi-details p {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Montserrat", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  margin: 10px 0 0;
+  margin-left: 0px;
+  max-width: 284px;
+}
+
+/* End: Main Hero Image */
+/* End: Main */
