@@ -260,4 +260,55 @@ main {
 }
 
 /* End: Main Hero Image */
+
+/* Start: Featured Categories */
+
+.parent {
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.parent div{
+  padding: 10px;
+  padding-bottom: 9em;
+  border-radius: 15px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  margin: 0 8% 0 0;
+  background-color: #222222;
+  color: var(--color-text-white);
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  margin: 0 8% 0 0;
+  background-color: #fec62e;
+}
+.div3 {
+  grid-area: 1 / 3 / 2 / 5;
+  background-color: #f42c37;
+}
+.div4 {
+  grid-area: 2 / 1 / 3 / 3;
+  margin: 4% 4% 0 0;
+  background-color: #edeced;
+}
+.div5 {
+  grid-area: 2 / 3 / 3 / 4;
+  margin: 8% 8% 0 0;
+  background-color: #2dd06f;
+}
+.div6 {
+  grid-area: 2 / 4 / 3 / 5;
+  margin: 8% 0 0 0;
+  background-color: #147aff;
+}
+
+/* End: Featured Categories */
+
 /* End: Main */
