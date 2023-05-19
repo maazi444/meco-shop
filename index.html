@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meco | Digital Shop</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +19,7 @@
   </head>
   <body>
     <!-- Start: Header -->
-    <header class="padding-one">
+    <header class="padding-one" data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-out">
       <div class="header-inner">
         <div class="header-logo">
           <a href="/"><img src="assets/logo.png" alt="" /></a>
@@ -83,21 +84,21 @@
       <section class="main-hero-image">
         <div class="mhi-content">
           <div class="mhi-headings">
-            <h2 class="mhi-heading-primary">Beats Solo</h2>
-            <h3 class="mhi-heading-secondary">Wireless</h3>
-            <div class="mhi-heading-description">
+            <h2 class="mhi-heading-primary" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="50">Beats Solo</h2>
+            <h3 class="mhi-heading-secondary" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="150">Wireless</h3>
+            <div class="mhi-heading-description" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="250">
               <p>headphone</p>
             </div>
           </div>
           <div class="mhi-images">
-            <div class="mhi-image-parent">
+            <div class="mhi-image-parent" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200" data-aos-easing="ease-in-out" data-aos-offset="200">
               <img src="./assets/Group_1271-1.png" />
             </div>
           </div>
-          <div class="mhi-button">
+          <div class="mhi-button" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-delay="400">
             <a href="">Shop by Category</a>
           </div>
-          <div class="mhi-details">
+          <div class="mhi-details" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="250" data-aos-offset="-200">
             <h2>Description</h2>
             <p>
               There are many variations passages of Lorem Ipsum available, but
@@ -187,5 +188,11 @@
       </section>
       <!-- End: Featured Categories -->
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true
+      });
+    </script>
   </body>
 </html>
