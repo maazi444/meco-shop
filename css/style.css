@@ -2,7 +2,7 @@
 /* font-family: 'Poppins', sans-serif; */
 
 :root {
-  --medium-grey: rgb(68, 68, 68);
+  --trans-white: rgba(255, 255, 255, 0.2);
   --grey-border-color: #e1e1e1;
   --black-shadow: rgb(0 0 0/6%);
   --global-color-text: #000;
@@ -144,6 +144,7 @@ nav a {
 
 main {
   min-height: 100vh;
+  margin-bottom: 3em;
 }
 
 /* Start: Main Hero Image */
@@ -268,8 +269,8 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 2%;
+  grid-row-gap: 3%;
 }
 
 .fc-parent div {
@@ -278,7 +279,7 @@ main {
 
 .fc-1 {
   grid-area: 1 / 1 / 2 / 2;
-  margin: 0 8% 0 0;
+  /* margin: 0 8% 0 0; */
   background-image: linear-gradient(300deg, #363636 13%, #222 38%);
   color: var(--color-text-white);
   transition: 0.3s ease-in-out;
@@ -290,11 +291,9 @@ main {
 
 .fc-2 {
   grid-area: 1 / 2 / 2 / 3;
-  margin: 0 8% 0 0;
-  background-image: radial-gradient(
-    rgb(254, 198, 46) 0%,
-    rgb(254, 198, 46) 100%
-  );
+  /* margin: 0 8% 0 0; */
+  background-image: radial-gradient(rgb(254, 198, 46) 0%,
+      rgb(254, 198, 46) 100%);
   transition: 0.3s ease-in-out;
 }
 
@@ -306,19 +305,17 @@ main {
   color: #ffd76a;
 }
 
-.fc-2 .fc-card-image{
+.fc-2 .fc-card-image {
   top: 1% !important;
-  right: -106px !important;
+  right: -210px !important;
   min-width: 420px !important;
 }
 
 .fc-3 {
   grid-area: 1 / 3 / 2 / 5;
-  background-image: linear-gradient(
-    90deg,
-    rgb(244, 44, 55) 61%,
-    rgb(255, 78, 89) 100%
-  );
+  background-image: linear-gradient(90deg,
+      rgb(244, 44, 55) 61%,
+      rgb(255, 78, 89) 100%);
   transition: 0.3s ease-in-out;
 }
 
@@ -328,11 +325,9 @@ main {
 
 .fc-4 {
   grid-area: 2 / 1 / 3 / 3;
-  margin: 4% 4% 0 0;
-  background-image: linear-gradient(
-    rgb(237, 236, 237) 0%,
-    rgb(238, 240, 243) 100%
-  );
+  /* margin: 4% 4% 0 0; */
+  background-image: linear-gradient(rgb(237, 236, 237) 0%,
+      rgb(238, 240, 243) 100%);
   transition: 0.3s ease-in-out;
 }
 
@@ -342,7 +337,7 @@ main {
 
 .fc-5 {
   grid-area: 2 / 3 / 3 / 4;
-  margin: 8% 8% 0 0;
+  /* margin: 8% 8% 0 0; */
   background-color: #2dd06f;
   transition: 0.3s ease-in-out;
 }
@@ -353,11 +348,9 @@ main {
 
 .fc-6 {
   grid-area: 2 / 4 / 3 / 5;
-  margin: 8% 0 0 0;
-  background-image: linear-gradient(
-    rgb(20, 120, 255) 0%,
-    rgb(24, 145, 255) 100%
-  );
+  /* margin: 8% 0 0 0; */
+  background-image: linear-gradient(rgb(20, 120, 255) 0%,
+      rgb(24, 145, 255) 100%);
   transition: 0.3s ease-in-out;
 }
 
@@ -369,19 +362,20 @@ main {
   width: 100%;
   position: relative;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  align-items: flex-end;
-  align-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
   padding: 2em;
-  padding-top: 9em;
-  padding-bottom: 4em;
+  padding-top: 5em;
+  padding-bottom: 2em;
   overflow: hidden;
 }
 
 .fc-card-image {
   z-index: 1;
   position: absolute;
-  right: 0;
+  right: -87px;
   bottom: -19px;
   max-width: 370px;
   min-width: 370px;
@@ -391,7 +385,7 @@ main {
 
 .fc-card-image img {
   height: auto;
-  width: 370px;
+  width: 310px;
 }
 
 .fc-modern-heading-primary {
@@ -416,12 +410,12 @@ main {
 
 .fc-modern-heading-description {
   font-family: "Montserrat", Sans-serif;
-  font-size: 50px;
+  font-size: 3.1vw;
   font-weight: 900;
   line-height: 61px;
   letter-spacing: -1.3px;
   margin: 0 0 -64px;
-  color: var(--medium-grey);
+  color: var(--trans-white);
 }
 
 .fc-card-button {
@@ -452,6 +446,94 @@ main {
   background: var(--color-text-white);
 }
 
+.fc-3 .fc-card-image {
+  right: 0;
+  bottom: -55px;
+  /* margin-bottom: 20px; */
+}
+
+.fc-3 .fc-card-image img {
+  width: 450px;
+}
+
+.fc-3 .fc-button{
+  color: var(--pinkish-red);
+  background-color: var(--color-text-white);
+}
+
+.fc-3 .fc-button:hover{
+  color: var(--color-text-white);
+  background-color: var(--global-color-text);
+}
+
+.fc-4 .fc-card-image{
+  bottom: -50px;
+}
+
+.fc-4 .fc-card-image img{
+  width: 265px;
+}
+
+.fc-4 .fc-modern-heading-primary {
+  font-family: "Poppins", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.4px;
+  color: var(--global-color-text);
+  margin: 0 0 1px;
+}
+
+.fc-4 .fc-modern-heading-secondary {
+  font-family: "Poppins", Sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 46px;
+  letter-spacing: -1px;
+  color: var(--global-color-text);
+  margin: 0 0 -5px;
+}
+
+.fc-4 .fc-modern-heading-description {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 3.1vw;
+  font-weight: 900;
+  line-height: 61px;
+  letter-spacing: -1.3px;
+  margin: 0 0 -64px;
+  color: #fff;
+}
+
+.fc-4 .fc-button:hover{
+  background-color: var(--global-color-text);
+  color: var(--color-text-white);
+}
+
+.fc-5 .fc-card-image,
+.fc-6 .fc-card-image{
+  right: -125px;
+  bottom: -106px;
+}
+
+.fc-5 .fc-button{
+  background-color: var(--color-text-white);
+  color: #2dd06f;
+}
+
+.fc-5 .fc-button:hover{
+  background-color: var(--global-color-text);
+  color: var(--color-text-white);
+}
+
+.fc-6 .fc-button{
+  background-color: var(--color-text-white);
+  color: #1478ff;
+}
+
+.fc-6 .fc-button:hover{
+  background-color: var(--global-color-text);
+  color: var(--color-text-white);
+}
 /* End: Featured Categories */
 
 /* End: Main */
